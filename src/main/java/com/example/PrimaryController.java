@@ -1,12 +1,21 @@
 package com.example;
 
-import java.io.IOException;
+import java.util.ArrayList;
+
 import javafx.fxml.FXML;
+import javafx.scene.control.TextField;
 
 public class PrimaryController {
-
+    
     @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
+    TextField txtProduto;
+    @FXML
+    TextField txtSetor;
+    
+    private ArrayList<Produto> produtos = new ArrayList<>();
+    
+    public void adicionar() {
+        var produto = new Produto(txtProduto.getText(), txtSetor.getText());
+
     }
 }
