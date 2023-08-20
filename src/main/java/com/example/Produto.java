@@ -6,5 +6,3 @@ public record Produto(String produto, String setor) {
         return setor + " " + produto;
     }
 }
-
-// O erro está na versão do Java, preciso mudar para a 16.
